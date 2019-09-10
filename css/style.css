@@ -1,0 +1,155 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0;
+    position: relative
+}
+header {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.logo, .nav-links{
+    display: flex;
+}
+.logo {
+    margin-left: 5em;
+}
+.logo a img{
+    width: 200px;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+ul li {
+    list-style: none;
+    color: black;
+    margin: 2em;
+}
+ul {
+    display: flex;
+    background-color: #fff;
+}
+.container {
+    max-width: 1200px;
+    margin: 6em auto;
+    padding: 1.5em auto;
+}
+.hero {
+    text-align: left;
+    display:flex;
+}
+.hero h1 {
+    font-size: 5em;
+    line-height: 1.2em;
+    margin-top: .5rem;
+}
+.hero h2 {
+    font-size: 2em;
+    line-height: 1em;
+    margin-top: .5rem;
+}
+.hero h1::before {
+    display: none;
+}
+.hero h1::after {
+    content: "";
+    display: block;
+    width: 300px;
+    border: 3px solid #17B806;
+    margin: 20px 0 20px 0;
+}
+.hero p {
+    display: none;
+}
+.appButtons {
+    display: flex;
+    margin-top: 20px;
+    padding: 0px;
+    align-items: left;
+    justify-content: left;
+}
+#apple-download, #android-download {
+    width: 141px;
+    height: 42px;
+    padding: 1px;
+}
+figure img {
+    margin: 1.5em auto;
+    width: 400px;
+    -webkit-transform:rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+input[type="email"] {
+    width: 500px;
+    height: 30px;
+    margin-right: 0;
+}
+input[type="submit"]  {
+    height: 30px;
+    margin-left: 0;
+}
+
+@media (max-width: 760px) {
+    .container {
+        max-width: 960px;
+        margin: 6em auto;
+        padding: 1.5em auto;
+    }
+    .hero h1 {
+        font-size: 3em;
+        line-height: 1.2em;
+        margin-top: .5rem;
+    }
+    .hero h2 {
+        font-size: 1.5em;
+        line-height: 1em;
+        margin-top: .5rem;
+    }
+    .hero h1::before {
+        display: none;
+    }
+    .hero h1::after {
+        content: "";
+        display: block;
+        width: 100px;
+        border: 3px solid #17B806;
+        margin: 20px 0 20px 0;
+    }
+    iframe {
+        width: 800px;
+        height: 500px;
+    }
+    figure img {
+        margin: 1.5em auto;
+        width: 300px;
+        -webkit-transform:rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+}
